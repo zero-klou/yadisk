@@ -62,7 +62,7 @@ class SQLighter():
 
 db = SQLighter('sqlite_db.db')
 
-y = yadisk.YaDisk(token="AgAAAAAQFjWdAAbhCWlm3jV-okdIiswqK-qw-Gw")
+y = yadisk.YaDisk(token=config.tg_bot.yadisk_config)
 
 async def cmd_process_start(message: types.Message, state: FSMContext):
     await state.finish()
